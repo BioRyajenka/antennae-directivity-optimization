@@ -1,7 +1,7 @@
 import random
-from deap import base, creator, tools
 import numpy as np
 from math import sqrt
+from deap import base, creator, tools
 
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMax)
